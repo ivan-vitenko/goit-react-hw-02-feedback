@@ -5,13 +5,13 @@ const Statistics = ({
   good,
   neutral,
   bad,
-  TotalFeedback,
-  PositiveFeedbackPercentage,
+  totalFeedback,
+  positiveFeedbackPercentage,
 }) => (
   <div>
     <h2>Statistics</h2>
 
-    {Boolean(TotalFeedback) ? (
+    {Boolean(totalFeedback) ? (
       <div>
         <ul className={s.StatisticList}>
           <li>Good: {good} </li>
@@ -20,8 +20,8 @@ const Statistics = ({
         </ul>
 
         <div>
-          <p>Total: {TotalFeedback}</p>
-          <p>Positive feedback: {PositiveFeedbackPercentage}</p>
+          <p>Total: {totalFeedback}</p>
+          <p>Positive feedback: {positiveFeedbackPercentage}</p>
         </div>
       </div>
     ) : (
